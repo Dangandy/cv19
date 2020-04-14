@@ -10,6 +10,6 @@ flask run
 ```
 
 ## Usage
-- go to the following link to get prediction: localhost:3000/predict/<Country>
+- go to the following link to get prediction: localhost:3000/predict/`<Country>`
 - where <Country> can be any country ( case sensitive ) eg. Canada
 
