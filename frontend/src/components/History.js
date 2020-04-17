@@ -12,7 +12,7 @@ export default function History({ country }) {
   useEffect(() => {
     async function fetchHistory() {
       console.log("fetching history");
-      await fetch(`http://localhost:5000/plot/${country}`, {
+      await fetch(`http://18.206.140.189/plot/${country}`, {
         headers: {
           "Content-Type": "application/json",
           Accept: "application/json",
@@ -30,7 +30,7 @@ export default function History({ country }) {
   useEffect(() => {
     async function fetchHistory() {
       console.log("fetching prediction");
-      await fetch(`http://localhost:5000/predict/${country}`, {
+      await fetch(`http://18.206.140.189/predict/${country}`, {
         headers: {
           "Content-Type": "application/json",
           Accept: "application/json",
