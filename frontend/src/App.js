@@ -1,10 +1,9 @@
 // imports
-import React, { useState, useEffect, useRef } from "react";
+import React from "react";
 import styled, { createGlobalStyle, keyframes } from "styled-components";
 
 // local
 // import Header from "./components/Header";
-import History from "./components/History";
 import Stats from "./components/Stats";
 import logo from "./virus.svg";
 import MultiSelect from "./components/MultiSelect";
@@ -42,7 +41,6 @@ const Header = styled.header`
 `;
 
 function App() {
-  const [country, setCountry] = useState("Canada");
   return (
     <>
       <GlobalStyle />
@@ -52,7 +50,7 @@ function App() {
         </Header>
         <h3>World Stats</h3>
         <Stats country="World" />
-        <MultiSelect setCountry={setCountry} />
+        <MultiSelect />
       </Wrapper>
     </>
   );

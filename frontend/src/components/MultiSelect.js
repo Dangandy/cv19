@@ -1,5 +1,5 @@
 // imports
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 // local
 import Stats from "./Stats";

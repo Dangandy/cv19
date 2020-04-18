@@ -7,12 +7,11 @@ export default function History({ country }) {
   const [history, setHistory] = useState();
   const [prediction, setPrediction] = useState();
   const canvas = useRef(null);
-  const wrapper = useRef(null);
 
   useEffect(() => {
     async function fetchHistory() {
       console.log("fetching history");
-      await fetch(`http://18.206.140.189/plot/${country}`, {
+      await fetch(`https://cv19.andydang.ca/plot/${country}`, {
         headers: {
           "Content-Type": "application/json",
           Accept: "application/json",
@@ -30,7 +29,7 @@ export default function History({ country }) {
   useEffect(() => {
     async function fetchHistory() {
       console.log("fetching prediction");
-      await fetch(`http://18.206.140.189/predict/${country}`, {
+      await fetch(`https://cv19.andydang.ca/predict/${country}`, {
         headers: {
           "Content-Type": "application/json",
           Accept: "application/json",

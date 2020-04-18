@@ -17,7 +17,7 @@ export default function Stats({ country }) {
   const [error, setError] = useState();
   useEffect(() => {
     const fetchData = async () => {
-      await fetch(`http://18.206.140.189/stats/${country}`, {
+      await fetch(`https://cv19.andydang.ca/stats/${country}`, {
         headers: {
           "Content-Type": "application/json",
           Accept: "application/json",
